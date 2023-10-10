@@ -122,16 +122,40 @@ h4{
 .card-container{
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    flex-wrap: wrap;
+    gap: 4rem;
 }
-.project-img{
-    width: 90%;
-    cursor: pointer;
+.image-container{
     border-radius: 15px;
-    transition: .3s;
+    background-color: #32363b;
+    max-width: 20%;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
 }
 
-.project-img:hover{
+.project-img{
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+.sub-pic{
+    display: flex;
+    gap: 1rem;
+    width: auto;
+}
+
+.sub-pic-container{
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 145px;
+}
+
+.image-container:hover{
     box-shadow: 5px 5px 30px 5px #173691;
     width: 100%;
 }
@@ -139,6 +163,10 @@ h4{
 .project-description{
     text-align: center;
     margin-top: 1rem;
+}
+
+.about-project{
+    margin-top: 1rem;    
 }
 
 .card{
@@ -155,7 +183,7 @@ h4{
 }
 
 #email, #email_content{
-    min-width: 25rem;
+    min-width: 20rem;
     margin: 1rem;
     outline: none;
     border: 1px solid #fff;
@@ -178,7 +206,7 @@ h4{
 }
 
 #email{
-    width: 80%;
+    width: auto;
     max-width: 50rem;
 }
 .socials{

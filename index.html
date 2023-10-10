@@ -14,19 +14,19 @@
     <title>Joshua|Portfolio</title>
 </head>
 <body class="text-light">
-    <div class="container">
+    <div class="container home">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a id="home" href="#">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a id="about" href="#">About</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a id="projects" href="#">Projects</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a id="contact" href="#">Contact</a>
           </li>
         </ul>
         <div class="flex-container">
@@ -50,7 +50,7 @@
           </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container about">
       <div class="header-container">
         <h1 class="text-header">About</h1>
       </div>
@@ -66,7 +66,7 @@
             I am Joshua, a passionate fullstack web developer from Oriental Mindoro, Philippines.
           </p>
           <div class="resume-button" style="text-align: left;">
-            <button type="button" class="resume-btn">
+            <button type="button" onclick="scrollElement('.projects')" class="resume-btn">
               See my Projects
               <i class="fa-solid fa-arrow-down-long"></i>
             </button>
@@ -77,34 +77,75 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container projects">
       <div class="header-container">
         <h1 class="text-header">Projects</h1>
       </div>
      <div class="card-container">
       <div class="image-container">
-        <img class="project-img" src="components/project_img/edoctrack/Screenshot 2023-10-08 201453.png" alt="">
+        <div class="project-img" style="background-image: url('components/project_img/edoctrack/Screenshot 2023-10-08 201559.png');"></div>
+        <div class="sub-pic">
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Login.png');"></div>
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Signup.png');"></div>
+        </div>
         <div class="project-description">
-          <h3>eDocTrack</h3>
+          <h3>eDocTrack (Capstone Project)</h3>
+          <p class="about-project">
+            eDocTrack is a Philippine Statistic Authority MIMAROPA document tracking system
+            that enables the said organization to track and route documents. It also has a 
+            repository where users can store routing slips of documents. 
+          </p>
         </div>
       </div>
       
       <div class="image-container">
-        <img class="project-img" src="components/project_img/edoctrack/Screenshot 2023-10-08 201453.png" alt="">
+        <div class="project-img" style="background-image: url('components/project_img/edoctrack/Screenshot 2023-10-08 201453.png');"></div>
+        <div class="sub-pic">
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Login.png');"></div>
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Screenshot 2023-10-08 201559.png');"></div>
+        </div>
+        <div class="project-description">
+          <h3>Project Tracker Management System</h3>
+          <p class="about-project">
+              Project Tracker is our internship output that allow the organization
+              to track project's progress and budgets as well as the asignee of the project.
+          </p>
+        </div>
       </div>
 
       <div class="image-container">
-        <img class="project-img" src="components/project_img/edoctrack/Screenshot 2023-10-08 201453.png" alt="">
+        <div class="project-img" style="background-image: url('components/project_img/edoctrack/Screenshot 2023-10-08 201453.png');"></div>
+        <div class="sub-pic">
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Login.png');"></div>
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Screenshot 2023-10-08 201559.png');"></div>
+        </div>
+        <div class="project-description">
+          <h3>Furniture Online Shop</h3>
+          <p class="about-project">
+             A web based online shop that allow the users to post and sell furnitures online. (School Project)
+          </p>
+        </div>
       </div>
 
-      <div class="image-container">
-        <img class="project-img" src="components/project_img/edoctrack/Screenshot 2023-10-08 201453.png" alt="">
+       <div class="image-container">
+        <div class="project-img" style="background-image: url('components/project_img/edoctrack/Screenshot 2023-10-08 201453.png');"></div>
+        <div class="sub-pic">
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Login.png');"></div>
+          <div class="sub-pic-container" style=" background-image: url('components/project_img/edoctrack/Screenshot 2023-10-08 201559.png');"></div>
+        </div>
+        <div class="project-description">
+          <h3>Connect to Chat</h3>
+          <p class="about-project">
+             A mobile application that allow users to chat locally using bluetooth and track nearby users
+             using google map <br>(School Project)
+          </p>
+        </div>
       </div>
 
 
      </div>
     </div>
-    <div class="container">
+    <div class="container contact">
       <div class="header-container">
         <h1 class="text-header">Contact</h1>
       </div>
@@ -133,16 +174,16 @@
     <footer>
       <ul>
          <li>
-           <a href="#">Home</a>
+           <a onclick="scrollElement('.home')" href="#">Home</a>
          </li>
          <li>
-           <a href="#">About</a>
+           <a onclick="scrollElement('.about')" id="about" href="#">About</a>
          </li>
          <li>
-           <a href="#">Projects</a>
+           <a onclick="scrollElement('.projects')" id="projects" href="#">Projects</a>
          </li>
          <li>
-           <a href="#">Contact</a>
+           <a onclick="scrollElement('.contact')" href="#">Contact</a>
          </li>
        </ul>
      </footer>
